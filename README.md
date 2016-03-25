@@ -36,4 +36,18 @@ To run tests simply:
 npm test
 ```
 
+### Docker
+
+If you wish to run test without installing anything on your local machine, run it behind a [docker](https://www.docker.com/) container. 
+
+Just build your image
+```
+docker build -t leftpad .
+```
+
+And run it
+```
+docker run leftpad
+```
+
 That's all.
