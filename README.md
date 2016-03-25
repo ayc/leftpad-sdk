@@ -1,4 +1,4 @@
-# leftpad-sdk
+# leftpad-sdk [![Build Status](https://travis-ci.org/ayc/leftpad-sdk.svg?branch=master)](https://travis-ci.org/ayc/leftpad-sdk)
 
 We were all saddened and shocked by the sudden disappearance of the `left-pad` NPM module. We were lost and unable to left-pad our strings, until one adventurous person decided to develop a RESTful API to offer that same functionality under a revolutionary new technology called SMaaS (String Manipulation as a Service). Believe you me, this is going to be bigger than The Cloud. You can read more about it on its site: http://left-pad.io/
 
@@ -23,5 +23,17 @@ var promise = leftpad("hello world", 20, "#")
 promise.then(function(ret) { console.log(ret.body.str) })
 ```
 similarly to the previous example, this will print `#########hello world`.
+
+### Testing
+
+Tests are handled by [mochajs](http://mochajs.org/). To install with npm:
+```
+npm install -g mocha
+```
+
+To run tests simply:
+```
+npm test
+```
 
 That's all.
